@@ -4,7 +4,9 @@
 
 #### shoutout [this website](https://supercollider.github.io/sc-140.html) for giving me the inspiration i needed for this. especially Nathanel Virgo's patch
 
-#### the first iteration is tough. i don't know why it's not counting my file when i tried to replace certain aspects of it and modify it. it's pretty cool to scrub but i just want something a bit more rudimentary. 
+#### the first iteration is tough. i don't know why it's not counting my file when i tried to replace certain aspects of it and modify it. it's pretty cool to scrub but i just want something a bit more rudimentary.
+
+#### i used a buffer.read to get the sound that i put in my folder (which i shortened for ultimate brevity) and just copied over the code. i need to figure out how it reads here 
 
 ```b=Buffer.read(s,"hl.wav");play{t=Impulse.kr(5);PlayBuf.ar(1,b,1,t,Demand.kr(t,0,Dseq(1e3*[103,41,162,15,141,52,124,190],4)))!2}```
 
@@ -18,7 +20,7 @@
 
 #### i kinda don't want to use an exit function, i just want a drone of some sort. wait i can actually take a couple things out i think. sample 13 of my buffer has the hi at the perfect area, i think it's because of demand.kr? oh man i gotta read up the documentation again...
 
-#### ohhh ok i think i know how to modify it
+#### ohhh ok i think i know how to modify it but i'm gonna cry i'm gonna be over by 6 characters because of parenthesis and brackets i think
 
 ```Buffer.read(s,thisProcess.nowExecutingPath.dirname +/+ "hl.wav",action:{|b|play{t=Impulse.kr(8);PlayBuf.ar(2,b,1,t,Demand.kr(t,0,Dseq([13],4)))}})```
 
