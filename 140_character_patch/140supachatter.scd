@@ -1,1 +1,1 @@
-Buffer.read(s,thisProcess.nowExecutingPath.dirname +/+ "hl.wav",action:{|b|play{t=Impulse.kr(8);PlayBuf.ar(2,b,1,t,Demand.kr(t,0,Dseq([13],4)))}})
+Buffer.read(s,thisProcess.nowExecutingPath.dirname +/+ "hl.wav",action:{|b|play{t=Impulse.kr(15);PlayBuf.ar(2,b,1,t,Demand.kr(t,0,Dseq([14],4
