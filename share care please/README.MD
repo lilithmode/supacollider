@@ -3,7 +3,7 @@
 ### i had also wanted to do something foodman-esque / idm adjacent, and what better way to do that by completely ditching control for the drums, and only controlling a texture
 
 ## here's the script:
-###drums:
+### drums:
 
 ```
 SynthDef(\kick, {
