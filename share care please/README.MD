@@ -5,7 +5,7 @@
 ## here's the script:
 ###drums:
 
-``
+```
 SynthDef(\kick, {
 	var snd;
 	snd = SinOsc.ar(Env([300,70,50],[0.05,0.2]).ar); //:3 (recommended numbers i'd like to play with are 300-600)
@@ -39,7 +39,7 @@ SynthDef(\clap, {
 	snd = snd!2 * \amp.kr(-10.dbamp);
 	Out.ar(\out.kr(0), snd);
 }).add;
-``
+```
 
 ### a lot of the drums are synthesized off of things i found off the forum in order to implement them and have them sound "feasible" to me
 ### i don't really care about realism in these drums, so a lot of these are just variables with stacks of things that are being modeled through some effects
@@ -48,7 +48,7 @@ SynthDef(\clap, {
 
 ### anyways, here's the kicker: the SKITTERS
 
-``
+```
 SynthDef(\dirty,{
 	var dens=MouseX.kr(5,80);
 	var trg=Dust2.kr(dens);
@@ -62,7 +62,7 @@ SynthDef(\dirty,{
 	Out.ar(0,sig!2);
 }).add;
 
-)``
+)```
 
 ### i named it dirty because that's all it did me. i think that makes sense. whatever
 ### my goal with this was to make something slightly more interactive using the mouse options that we learned from the beginning - i didn't want to spice it up with guis because frankly i don't have the mental health for that at the moment. maybe i'll do it over break !
