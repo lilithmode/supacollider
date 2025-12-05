@@ -62,7 +62,8 @@ SynthDef(\dirty,{
 	Out.ar(0,sig!2);
 }).add;
 
-)```
+)
+```
 
 ### i named it dirty because that's all it did me. i think that makes sense. whatever
 ### my goal with this was to make something slightly more interactive using the mouse options that we learned from the beginning - i didn't want to spice it up with guis because frankly i don't have the mental health for that at the moment. maybe i'll do it over break !
